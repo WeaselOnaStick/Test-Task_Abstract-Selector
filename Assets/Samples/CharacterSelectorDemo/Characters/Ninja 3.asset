@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Ninja 3
   level: 400
   icon: {fileID: 21300000, guid: d847362c62072f143876f6600ba4cac5, type: 3}
-  previewModel: {fileID: 5139589806656764147, guid: 8f4444c9e7bd8194caa881aa82e1451a, type: 3}
+  previewModel: {fileID: 3260407015838980157, guid: 39b7d860ae0100f4e8aab5c8f26c4838, type: 3}
