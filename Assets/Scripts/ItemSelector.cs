@@ -1,12 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class ItemSelector<T> : MonoBehaviour
 {
     [SerializeField]
-    List<T> items = new List<T>();
+    protected List<T> items = new List<T>();
 
     [SerializeField]
     int cur_idx = 0;
@@ -15,7 +13,7 @@ public abstract class ItemSelector<T> : MonoBehaviour
 
     public T Current_item { get => current_item; private set => current_item = value; }
 
-    public void TraverseSelection(bool prev = false)
+    public void StepTraverseSelection(bool prev = false)
     {
         int step = prev ? -1 : 1;
         cur_idx += step;
@@ -23,7 +21,24 @@ public abstract class ItemSelector<T> : MonoBehaviour
         if (cur_idx >= items.Count) cur_idx = items.Count - 1;
 
         Current_item = items[cur_idx];
+        DisplayCurrentItem();
+    }
+
+    public void GoToSelection(int index)
+    {
+        if (index < 0 || index >= items.Count) return;
+        cur_idx = index;
+        Current_item = items[cur_idx];
+        DisplayCurrentItem();
     }
 
     public abstract void DisplayCurrentItem();
+
+    public abstract void InitializeList();
+
+    private void Start()
+    {
+        InitializeList();
+        GoToSelection(0);
+    }
 }

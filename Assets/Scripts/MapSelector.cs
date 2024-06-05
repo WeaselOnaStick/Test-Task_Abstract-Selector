@@ -21,4 +21,9 @@ public class MapSelector : ItemSelector<SelectableMap>
         _description_label.text = Current_item.description;
         _image_display.sprite = Current_item.image;
     }
+
+    public override void InitializeList()
+    {
+        // for variety let's switch between maps via "<" and ">" buttons
+    }
 }
