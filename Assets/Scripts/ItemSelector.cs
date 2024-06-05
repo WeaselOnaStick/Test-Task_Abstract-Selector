@@ -9,6 +9,9 @@ public abstract class ItemSelector<T> : MonoBehaviour
     [SerializeField]
     int cur_idx = 0;
 
+    [SerializeField]
+    public bool loopSteps = true;
+
     T current_item;
 
     public T Current_item { get => current_item; private set => current_item = value; }
@@ -17,8 +20,16 @@ public abstract class ItemSelector<T> : MonoBehaviour
     {
         int step = prev ? -1 : 1;
         cur_idx += step;
-        if (cur_idx < 0) cur_idx = 0;
-        if (cur_idx >= items.Count) cur_idx = items.Count - 1;
+        if (loopSteps)
+        {
+            if (cur_idx < 0) cur_idx = items.Count - 1;
+            if (cur_idx >= items.Count) cur_idx = 0;
+        }
+        else
+        {
+            if (cur_idx < 0) cur_idx = 0;
+            if (cur_idx >= items.Count) cur_idx = items.Count - 1;
+        }
 
         Current_item = items[cur_idx];
         DisplayCurrentItem();

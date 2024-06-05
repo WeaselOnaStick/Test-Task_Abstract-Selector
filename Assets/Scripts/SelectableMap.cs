@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SelectableMap : SelectableItem
 {
     public string name;
+    [TextArea(3,16)]
     public string description;
     public Sprite image;
     public int sceneID;

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f843a2c96bdf1024fab2a8f44155bcbf, type: 3}
+  m_Name: Wheel
+  m_EditorClassIdentifier: 
+  name: Amusement Park
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+    rutrum vel odio in porttitor. Ut dictum ipsum vitae dolor aliquam, et sagittis
+    turpis cursus. Sed iaculis elit sollicitudin nunc convallis, in placerat augue
+    tristique. Vestibulum eget auctor eros, sit amet aliquet orci. Proin neque enim,
+    venenatis a efficitur sed, posuere eget mauris. Proin mauris metus, viverra eget
+    nunc non, euismod tincidunt ligula. Sed mattis fringilla nibh sed mollis. Donec
+    pellentesque suscipit arcu, ut commodo mauris. Phasellus vestibulum in ante nec
+    scelerisque. Fusce sagittis efficitur diam, quis dictum augue ultricies in. Donec
+    commodo dolor euismod, egestas erat sed, fermentum tortor.
+
+    
+
+    Duis
+    molestie justo tempor est pharetra tincidunt. Pellentesque habitant morbi tristique
+    senectus et netus et malesuada fames ac turpis egestas. Donec a sem ac tortor
+    feugiat pharetra vel quis neque. Quisque sem odio, semper vitae eros sit amet,
+    aliquam ornare lacus. Donec rutrum nunc vitae ipsum interdum faucibus. Proin
+    viverra diam ut malesuada blandit. Etiam erat libero, euismod eu vestibulum convallis,
+    iaculis et elit.
+
+    
+
+    Sed laoreet, arcu quis posuere consectetur, sapien
+    turpis ullamcorper erat, et sodales purus sem quis risus. Donec ac tincidunt
+    augue, vitae fermentum libero. Integer pretium justo at aliquam varius. Pellentesque
+    luctus convallis massa, varius convallis velit. Nunc.'
+  image: {fileID: 21300000, guid: 1971cda504920b74792fdda95d8279bb, type: 3}
+  sceneID: 2
